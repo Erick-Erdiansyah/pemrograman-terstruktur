@@ -1,0 +1,30 @@
+program  tabel;
+uses crt;
+var ConT,UppT,ResT,ExtT,Total,TotalD,ConD,UppD,ResD,ExtD : integer;
+begin
+clrscr;
+ConT := 640;
+UppT := 123;
+ResT := 384;
+ExtT := 7045;
+Total := ConT + UppT + ResT + ExtT;
+ConD := 40;
+UppD := 123;
+ResD := 384;
+ExtD := 6021;
+TotalD := ConD + UppD + ResD + ExtD;
+writeln('ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄ¿');
+writeln('³  Jenis Memori  ³  Total  ³  Digunakan  ³  Free Space ³');
+writeln('ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄ´');
+writeln('³ Conversional   ³ ',ConT,'     ³ ',ConD,'          ³ ',ConT - ConD,'         ³');
+writeln('ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄ´');
+writeln('³ Upper          ³ ',UppT,'     ³ ',UppD,'         ³ ',UppT - UppD,'           ³');
+writeln('ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄ´');
+writeln('³ Reserved       ³ ',ResT,'     ³ ',ResD,'         ³ ',ResT - ResD,'           ³');
+writeln('ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄ´');
+writeln('³ Extended (XMS) ³ ',ExtT,'    ³ ',ExtD,'        ³ ',ExtT - ExtD,'        ³');
+writeln('ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄ´');
+writeln('³  Total Memori  ³ ',Total,'    ³ ',TotalD,'        ³ ',Total - TotalD,'        ³');
+writeln('ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÙ');
+readln;
+end.
